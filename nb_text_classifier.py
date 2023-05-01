@@ -31,7 +31,7 @@ with open('model.pkl','wb')as f:
 
 # Get user input and make a prediction
 
-st.header('Caterory Prediction')
+st.header('Text Classifier')
 input = st.text_area("Enter the text", value="")
 if st.button("Predict"):
     vec = vector.transform([input]).toarray()
