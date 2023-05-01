@@ -31,11 +31,11 @@ with open('model.pkl','wb')as f:
 
 # Get user input and make a prediction
 
-st.header('Category Prediction')
+st.header('Caterory Prediction')
 input = st.text_area("Enter the text", value="")
 if st.button("Predict"):
     vec = vector.transform([input]).toarray()
     pred = naivebayes.predict(vec)[0]
     category = {0:'tech', 1:'business', 2:'sport', 3:'entertainment', 4:'politics'}
     result=category[pred]
-    st.write("The predicted category is:",result)
+    st.write("Label:",result)
