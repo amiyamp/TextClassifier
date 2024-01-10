@@ -39,4 +39,4 @@ if st.button("Predict"):
     category = {0:'tech', 1:'business', 2:'sport', 3:'entertainment', 4:'politics'}
     result=category[pred]
     st.write("Label: ",result)
-nhvbcbvcx
+
